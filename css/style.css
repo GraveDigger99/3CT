@@ -522,27 +522,27 @@ h6 {
   border-top: 1px solid rgba(49, 49, 49, 0.199);
 }
 
-@supports (padding-top: clamp( 3rem , 3rem  +  0vw , 3rem )) {
+@supports (padding-top: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 3rem )) {
   .footer {
-    padding-top: clamp( 3rem , 3rem  +  0vw , 3rem );
+    padding-top: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 3rem );
   }
 }
 
-@supports not (padding-top: clamp( 3rem , 3rem  +  0vw , 3rem )) {
+@supports not (padding-top: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 3rem )) {
   .footer {
-    padding-top: calc(3rem + 0 * (100vw - 20rem) / 77);
+    padding-top: calc(1.25rem + 1.75 * (100vw - 20rem) / 77);
   }
 }
 
-@supports (padding-bottom: clamp( 4rem , 4rem  +  0vw , 4rem )) {
+@supports (padding-bottom: clamp( 1.875rem , 1.3230519481rem  +  2.7597402597vw , 4rem )) {
   .footer {
-    padding-bottom: clamp( 4rem , 4rem  +  0vw , 4rem );
+    padding-bottom: clamp( 1.875rem , 1.3230519481rem  +  2.7597402597vw , 4rem );
   }
 }
 
-@supports not (padding-bottom: clamp( 4rem , 4rem  +  0vw , 4rem )) {
+@supports not (padding-bottom: clamp( 1.875rem , 1.3230519481rem  +  2.7597402597vw , 4rem )) {
   .footer {
-    padding-bottom: calc(4rem + 0 * (100vw - 20rem) / 77);
+    padding-bottom: calc(1.875rem + 2.125 * (100vw - 20rem) / 77);
   }
 }
 
@@ -687,15 +687,15 @@ h6 {
           flex-direction: column;
 }
 
-@supports (row-gap: clamp( 1.5rem , 1.5rem  +  0vw , 1.5rem )) {
+@supports (row-gap: clamp( 1.25rem , 1.1850649351rem  +  0.3246753247vw , 1.5rem )) {
   .item-footer__list {
-    row-gap: clamp( 1.5rem , 1.5rem  +  0vw , 1.5rem );
+    row-gap: clamp( 1.25rem , 1.1850649351rem  +  0.3246753247vw , 1.5rem );
   }
 }
 
-@supports not (row-gap: clamp( 1.5rem , 1.5rem  +  0vw , 1.5rem )) {
+@supports not (row-gap: clamp( 1.25rem , 1.1850649351rem  +  0.3246753247vw , 1.5rem )) {
   .item-footer__list {
-    row-gap: calc(1.5rem + 0 * (100vw - 20rem) / 77);
+    row-gap: calc(1.25rem + 0.25 * (100vw - 20rem) / 77);
   }
 }
 
@@ -707,15 +707,15 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 
-@supports (font-size: clamp( 1rem , 1rem  +  0vw , 1rem )) {
+@supports (font-size: clamp( 0.875rem , 0.8425324675rem  +  0.1623376623vw , 1rem )) {
   .item-footer__link-phone {
-    font-size: clamp( 1rem , 1rem  +  0vw , 1rem );
+    font-size: clamp( 0.875rem , 0.8425324675rem  +  0.1623376623vw , 1rem );
   }
 }
 
-@supports not (font-size: clamp( 1rem , 1rem  +  0vw , 1rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.8425324675rem  +  0.1623376623vw , 1rem )) {
   .item-footer__link-phone {
-    font-size: calc(1rem + 0 * (100vw - 20rem) / 77);
+    font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 77);
   }
 }
 
@@ -1466,6 +1466,18 @@ h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20%;
           flex: 0 0 20%;
+}
+
+.header_white {
+  background-color: #fff;
+}
+
+.menu__link_black {
+  color: #313131;
+}
+
+.header__item_wide {
+  display: block;
 }
 
 .swiper {
