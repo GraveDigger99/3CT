@@ -3546,22 +3546,32 @@ textarea.input {
           flex: 0 1 50%;
 }
 
-.info-vacancies__column_first {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .info-vacancies__element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+@supports (row-gap: clamp( 2rem , 1.7423510467rem  +  1.2882447665vw , 3rem )) {
+  .info-vacancies__element {
+    row-gap: clamp( 2rem , 1.7423510467rem  +  1.2882447665vw , 3rem );
+  }
+}
+
+@supports not (row-gap: clamp( 2rem , 1.7423510467rem  +  1.2882447665vw , 3rem )) {
+  .info-vacancies__element {
+    row-gap: calc(2rem + 1 * (100vw - 20rem) / 77.625);
+  }
 }
 
 @supports ((-moz-column-gap: clamp( 2rem , 1.7423510467rem  +  1.2882447665vw , 3rem )) or (column-gap: clamp( 2rem , 1.7423510467rem  +  1.2882447665vw , 3rem ))) {
@@ -4471,6 +4481,13 @@ textarea.input {
 
   .policy__header {
     margin-bottom: 1rem;
+  }
+
+  .info-vacancies__element {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
