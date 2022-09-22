@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220921211923">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220922165413">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -165,26 +165,45 @@
 							</div>
 							<a href="#" class="item-footer__title item-footer__title_content">Сервис</a>
 						</div>
-						<div data-da=".item-footer_logo,892,last" class="item-footer__author">by dorohov.design</div>
+						<a target="_blank" href="https://dorohov.design/" data-da=".item-footer_logo,892,last" class="item-footer__author">by dorohov.design</a>
 					</div>
 
 				</div>
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div data-fullscreen id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__row">
+					<div class="popup__image">
+						<picture><source srcset="img/popup/popup.webp" type="image/webp"><img src="img/popup/popup.jpg" alt="image"></picture>
+					</div>
+					<div class="popup__form">
+						<form class="main-callback__form form-main-callback popup__form-callback" action="#">
+							<button data-close type="button" class="popup__close">
+								<picture><source srcset="img/popup/icon.webp.webp" type="image/webp"><img src="img/popup/icon-png.png" alt="icon"></picture>
+							</button>
+							<h3 class="popup__title">
+								Для покупки оставьте
+								свои контактные данные
+							</h3>
+							<div class="form-main-callback__name">
+								<label class="form-main-callback__label" for="name">Имя</label>
+								<input id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Иван" class="form-main-callback__input input">
+							</div>
+							<div class="form-main-callback__phone">
+								<label class="form-main-callback__label" for="number">Номер телефона</label>
+								<input id="number" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+7 (999) 999-99-99" class="form-main-callback__input input">
+							</div>
+							<button type="submit" class="main-callback-form__button">Отправить</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20220921211923"></script>
+	<script src="js/app.min.js?_v=20220922165413"></script>
 </body>
 
 </html>
